@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+}
+
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <main>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+            <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">Bienvenido a ChatSignalR</h1>
+            <form class="space-y-4">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Introduce tu nombre:</label>
+                    <input type="text" id="username" name="username" placeholder="Tu nombre" class="form-control w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
+                </div>
+                <button type="submit" class="btn w-full bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-indigo-500 dark:hover:bg-indigo-600">Unirse al chat</button>
+            </form>
+        </div>
+    </main>
+</div>
+
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value.trim();
+    if (username) {
+        window.location.href = `/Chat?username=${encodeURIComponent(username)}`;
+    }
+});
+</script>
