@@ -15,6 +15,8 @@ Proyecto del ciclo Desarrollo de Aplicaciones Multiplataforma (DAM). Es una app 
 
 ---
 
+![Screenshot](screenshot.png)
+
 ## Tecnologías  
 - ASP.NET Core 7  
 - SignalR  
