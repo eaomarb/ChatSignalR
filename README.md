@@ -11,7 +11,7 @@
 ---
 
 ## Descripción  
-Proyecto del ciclo Desarrollo de Aplicaciones Multiplataforma (DAM). Es una app de chat en tiempo real donde los usuarios pueden unirse a salas y hablar al instante. Hecha con ASP.NET Core y SignalR, con una interfaz moderna y sencilla de usar.
+Es una app de chat en tiempo real donde los usuarios pueden unirse a salas y hablar al instante. Hecha con ASP.NET Core y SignalR, con una interfaz moderna y sencilla de usar.
 
 ---
 
